@@ -7,6 +7,12 @@
   margin-bottom: 10px !important;
 }
 
+.gtco-container-services {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
 .gto-features {
   border-top: 1px solid #e6e6e6;
 }
