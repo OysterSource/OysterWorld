@@ -3,20 +3,71 @@
 }
 
 .main_top {
-	background-color: #6E6E6E;
+	background-color: #FFFFFF;
 }
 
-.owl-controls {
-	display: none;
+.top_pic {
+	width: 100%;
 }
 
-.background-position {
-	padding: 20px;
+.relative {
+  position: relative;
+}
+
+.oysterworld_icon-absolute {
+  	position: absolute;
+  	width: 25%;
+  	left:10%;
+  	bottom: 20%;
+  	z-index: 1;
+}
+
+.cover-absolute {
+  	position: absolute;
+  	width: 70%;
+  	right:0%;
+  	bottom: -0.9%;
+  	z-index: 2;
+}
+
+.title-absolute {
+  	position: absolute;
+  	right:5%;
+  	top: 0%;
+  	z-index: 3;
+}
+
+.subtitle-absolute1 {
+  	position: absolute;
+    right: 5%;
+  	bottom: 48%;
+  	font-size: 2.5vw;
+  	text-align: center;
+  	z-index: 3;
+}
+
+.subtitle-absolute2 {
+  	position: absolute;
+  	right: 8.5%;
+  	bottom: 25%;
+  	font-size: 1.4vw;
+ 	z-index: 3;
+}
+
+.btn-absolute {
+  	position: absolute;
+  	z-index: 3;
 }
 
 .english {
 	font-family: 'Alex Brush', 'Segoe Script', sans-serif;
 	font-size: 25px;
+}
+
+.english-top {
+	font-family: 'Alex Brush', 'Segoe Script', sans-serif;
+	font-size: 7vw;
+	color:#FFFFFF;
 }
 
 .btn-position {
@@ -26,7 +77,8 @@
 }
 
 .btn-position img {
-	margin-top: -15px;
+	width:15%;
+	margin-top: -2.5%;
 }
 
 .btn1 a {
@@ -42,7 +94,11 @@
 	border: 3px solid #fff;
 	box-shadow: 0px 1px 4px #fff inset;
 	margin-left: -25px;
-	height: 45px;
+	height: 6%;
+	width: 15%;
+    right: 30%;
+    bottom: 20%;
+    font-size: 1vw;
 }
 
 .bt1 {
@@ -58,7 +114,7 @@
 
 .btn1 span {
 	color: #fff;
-	font-size: 30px;
+	font-size: 1.7vw;
 }
 
 .btn2 {
@@ -67,7 +123,11 @@
 	box-shadow: 0px 1px 4px #fff inset;
 	margin-top: 5px;
 	margin-left: -25px;
-	height: 45px;
+	height: 6%;
+	width: 15%;
+    right:12.5%;
+    bottom:20%;
+    font-size: 1vw;
 }
 
 .bt2 {
@@ -83,28 +143,11 @@
 
 .btn2 span {
 	color: #fff;
-	font-size: 30px;
-}
-
-.btn4 {
-	margin-top: 5px;
-	height: 359px;
-	margin-left: -25px;
+	font-size: 1.7vw;
 }
 
 .item {
 	font-size: 15px;
-}
-
-.wel {
-	background-color: rgba(60, 178, 178, 1);
-	border: 3px solid #fff;
-	padding: 10px 7px;;
-}
-
-.welcome p {
-	color: #fff;
-	text-align: center;
 }
 
 @media screen and (max-width:990px) {
@@ -121,9 +164,5 @@
 	}
 	.btn2 {
 		margin-left: 0;
-	}
-	.btn4 {
-		margin-left: 0;
-		margin-bottom: 5px;
 	}
 }
