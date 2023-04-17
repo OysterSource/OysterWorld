@@ -10,6 +10,15 @@
 	width: 100%;
 }
 
+.pc {
+	display: block
+	!important;
+}
+.sp {
+	display: none
+	!important; 
+}
+
 .relative {
   	position: relative;
 }
@@ -26,7 +35,7 @@
   	position: absolute;
   	width: 70%;
   	right:0%;
-  	bottom: -0.9%;
+  	bottom: -0.7%;
   	z-index: 2;
 }
 
@@ -150,7 +159,110 @@
 	font-size: 15px;
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:900px) {
+	.pc {
+		display: none !important;
+	}
+
+	.sp {
+		display: block !important;
+		width: 100%;
+	}
+	
+	.sp-display {
+		background-color: #FFFFFF;
+		width: 100%;
+		aspect-ratio: 7 / 6;
+	}
+
+	.oysterworld_icon-absolute {
+		position: absolute;
+		width: 50%;
+		left: 23%;
+		bottom: 2%;
+		z-index: 1;
+	}
+	
+	.english-top {
+		font-family: 'Alex Brush', 'Segoe Script', sans-serif;
+		font-size: 9.5vw;
+		top: 17%;
+		color: #FFFFFF;
+	}
+    
+	.subtitle-absolute1 {
+		position: absolute;
+		right: 6.1%;
+		bottom: -42%;
+		font-size: 4.5vw;
+		text-align: center;
+		z-index: 3;
+	}
+
+	.subtitle-absolute2 {
+		position: absolute;
+		right: 11.5%;
+		bottom: -73%;
+		font-size: 2.8vw;
+		text-align: center;
+		z-index: 3;
+	}
+
+	.btn1 {
+		background-color: rgba(242, 173, 46, 1);
+		border: 3px solid #fff;
+		box-shadow: 0px 1px 4px #fff inset;
+		margin-left: -25px;
+		height: 11%;
+		width: 45%;
+		right: 28%;
+		bottom: -84%;
+		font-size: 1vw;
+	}
+
+	.btn1 span {
+		color: #fff;
+		font-size: 5vw;
+	}
+
+	.btn2 {
+		background-color: rgba(98, 170, 35, 1);
+		border: 3px solid #fff;
+		box-shadow: 0px 1px 4px #fff inset;
+		margin-top: 5px;
+		margin-left: -25px;
+		height: 11%;
+		width: 45%;
+		right:28%;
+		bottom:	-100%;
+		font-size: 1vw;
+	}
+
+	.btn2 span {
+		color: #fff;
+		font-size: 5vw;
+	}
+
+	.btn-position img {
+		width: 15%;
+		margin-top: -4.5%;
+	}
+
+	.btn-position {
+		display: block;
+		text-align: center;
+		margin-top: 0px;
+	}
+
+	.btn-absolute {
+		position: absolute;
+		z-index: 3;
+	}
+	
+	.cover-absolute {
+		display:none;
+	}
+    
 	.background-position {
 		padding: 0;
 	}
