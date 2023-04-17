@@ -2,55 +2,47 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layout}">
-<body>
+<body class="main">
 
 
 <div layout:decorator="layout">
 	<th:block layout:fragment="layout-content">
 
-			<div class="gtco-container main_top">
-			<div class="background-position">
-				<div class="row">
-					<div class="col-xs-12 col-md-8 left">
-						<div id="owl-top" class="owl-carousel owl-carousel-fullwidth">
-							<div class="item">
-								<img src="images/top_logo.jpg" alt="top_logo">
-							</div>
-							<div class="item">
-								<img src="images/top_name.jpg" alt="top_name">
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-4 right">
-						<div class="gtco-testimonials btn1">
+			<div class="gtco-container-index main_top">
+				<div class="relative">
+					<img src="images/top.jpg" alt="top" class="top_pic pc">
+					<img src="images/top_sp.jpg" alt="top_sp" class="sp">
+				
+					<div>
+						<p class="english-top color_11 title-absolute">
+							Welcome to Oyster World!
+						</p>
+						<p class="subtitle-absolute1">
+							"あなたに寄り添い、想いをカタチにする"<br>
+							システム、コンテンツ開発会社<br>
+							オイスターワールド株式会社
+						</p>
+						<p class="subtitle-absolute2">
+							私たちはIT系スペシャリストプログラマと銀行系上流SEが<br>
+							タッグを組んで2018年4月に設立した株式会社です。<br>
+							あなたのシステムコンテンツ開発をお手伝いします。<br>
+							どうぞお気軽にご相談ください。
+						</p>
+						<div class="gtco-testimonials btn1 btn-absolute">
 							<a th:href="@{/about}"><div class="btn-position"><span>牡蠣の世界？</span><img src="images/btn.png" alt=""></div></a>
 						</div>
-						<div class="gtco-testimonials btn2">
+						<div class="gtco-testimonials btn2 btn-absolute">
 							<a th:href="@{/services}"><div class="btn-position"><span>サービス案内</span><img src="images/btn.png" alt=""></div></a>
 						</div>
-						<div class="wel btn4">
-							<div class="welcome">
-								<p>
-									<span class="english color_11">Welcome to Oyster World!</span>
-									<br> オイスターワールドへようこそ！
-								</p>
-							</div>
-							<strong>
-								<p>
-									私たちはIT系スペシャリストプログラマと銀行系上流SEがタッグを組んで2018年4月に設立した株式会社です。 <br>
-									<br>あなたのシステム・コンテンツ開発をお手伝いします。 <br> <br>どうぞお気軽にご相談ください。
-								</p>
-							</strong>
-						</div>
+						<img src="images/cover.png" alt="cover" class="cover-absolute">
+						<img src="images/oysterworld_icon.png" alt="oysterworld_icon" class="oysterworld_icon-absolute">
 					</div>
 				</div>
 			</div>
-		</div>
+			
+			<div class="sp-display"></div>
+						
 		<!-- main END  -->
 
 	</th:block>
 </div>
-
-
-</body>
-</html>
