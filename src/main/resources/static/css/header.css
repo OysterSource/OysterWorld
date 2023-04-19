@@ -122,6 +122,7 @@
 	margin-top: -7px;
 	right: 0;
 	color: #ccc;
+	z-index: 1;
 }
 
 .gtco-nav ul li.has-dropdown .dropdown {
