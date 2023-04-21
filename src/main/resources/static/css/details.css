@@ -1,42 +1,42 @@
 .details-button {
-  position: relative;
-  display: inline-block;
-  padding: .9em 4em;
-  background-color: #e60e0e;
-  border: 2px solid #e60e0e;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s;
-}
-.details-button::after {
-  position: absolute;
-  top: 50%;
-  right: .2em;
-  content: '';
-  margin-top: -5px;
-  border: 7px solid transparent;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  border-left-color: #e60e0e;
-  transition: all .3s;
-}
-.details-button:hover {
-  background-color: #fff;
-  color: #e60e0e;
-}
-.post-contents .button01:hover::after {
-  border-left-color: #333;
+	color: #FFEEFF;
+	font-size: 12px;
+	border-radius: 4px;
+	background-color: #0000BB;
+	border: none;
+	padding: 10px;
+	width: 200px;
+	transition: all 0.5s;
 }
 
-.col-xs-12 .details-button-position {
-	text-align:center;
+.details-button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	font-size: 15px;
 }
 
-.details-button-position {
-	margin-bottom:40px;
+.details-button span:after {
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
 }
 
-.details-button-position a{
-	text-decoration: none;
+.details-button:hover span {
+	padding-right: 25px;
+}
+
+.details-button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.inexperienced-display {
+	margin-top:40px;
+	margin-bottom: 40px;
+	text-align: center;
 }
