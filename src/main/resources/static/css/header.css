@@ -84,7 +84,7 @@
 .gtco-nav ul li a {
 	font-size: 16px;
 	padding: 30px 10px;
-	color: #3CB2B2;
+	color: #28b1f7;
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s;
 	transition: 0.5s;
@@ -330,10 +330,12 @@
 }
 
 #gtco-offcanvas {
-	position: absolute;
+	position: fixed;
 	z-index: 1901;
 	width: 200px;
-	background: black;
+	height: 260px;
+	background: rgb(29 29 29 / 80%);
+	border-bottom-left-radius:10px;
 	top: 0;
 	right: 0;
 	top: 0;
@@ -366,8 +368,10 @@
 }
 
 #gtco-offcanvas a {
-	color: rgba(255, 255, 255, 0.5);
+	color: #FFF;
 	font-family: "Montserrat", sans-serif;
+	font-size: 19px;
+	border-bottom: solid 1.5px #FFF;
 }
 
 #gtco-offcanvas a:hover {
