@@ -57,9 +57,9 @@
 
 .subtitle-absolute2 {
   	position: absolute;
-  	right: 8.5%;
-  	bottom: 25%;
-  	font-size: 1.4vw;
+  	right: 12.5%;
+  	bottom: 27%;
+  	font-size: 1.2vw;
  	z-index: 3;
 }
 
@@ -87,7 +87,8 @@
 
 .btn-position img {
 	width:15%;
-	margin-top: -2.5%;
+	margin-top: -4.5%;
+	margin-left: 5px;
 }
 
 .btn1 a {
@@ -99,7 +100,7 @@
 }
 
 .btn1 {
-	background-color: rgba(242, 173, 46, 1);
+	background-color: #ff9600;
 	border: 3px solid #fff;
 	box-shadow: 0px 1px 4px #fff inset;
 	margin-left: -25px;
@@ -117,8 +118,8 @@
 }
 
 .btn1:hover {
-	background-color: rgba(0, 0, 0, 1);
-	transition: all 0.5s;
+	background-color: #ffe3bb;
+	transition: all 0.2s;
 }
 
 .btn1 span {
@@ -127,7 +128,7 @@
 }
 
 .btn2 {
-	background-color: rgba(98, 170, 35, 1);
+	background-color:#0089ff;
 	border: 3px solid #fff;
 	box-shadow: 0px 1px 4px #fff inset;
 	margin-top: 5px;
@@ -146,8 +147,8 @@
 }
 
 .btn2:hover {
-	background-color: rgba(0, 0, 0, 1);
-	transition: all 0.5s;
+	background-color: #b3d5f3;
+	transition: all 0.2s;
 }
 
 .btn2 span {
@@ -172,7 +173,7 @@
 	.sp-display {
 		background-color: #FFFFFF;
 		width: 100%;
-		aspect-ratio: 7 / 6;
+		aspect-ratio: 9 / 10;
 	}
 
 	.oysterworld_icon-absolute {
@@ -192,60 +193,61 @@
     
 	.subtitle-absolute1 {
 		position: absolute;
-		right: 21%;
-		bottom: -42%;
-		font-size: 4.5vw;
+		right: 13%;
+		bottom: -57%;
+		font-size: 5.5vw;
 		text-align: center;
 		z-index: 3;
 	}
 
 	.subtitle-absolute2 {
 		position: absolute;
-		right: 11.5%;
-		bottom: -73%;
-		font-size: 2.8vw;
+		right: 10.5%;
+		bottom: -91%;
+		font-size: 3vw;
 		text-align: center;
 		z-index: 3;
 	}
 
 	.btn1 {
-		background-color: rgba(242, 173, 46, 1);
+		background-color: #ff9600;
 		border: 3px solid #fff;
 		box-shadow: 0px 1px 4px #fff inset;
 		margin-left: -25px;
-		height: 11%;
-		width: 45%;
-		right: 28%;
-		bottom: -84%;
+		height: 16%;
+		width: 66%;
+		right: 17%;
+		bottom: -109%;
 		font-size: 1vw;
 	}
 
 	.btn1 span {
 		color: #fff;
-		font-size: 5vw;
+		font-size: 7.5vw;
 	}
 
 	.btn2 {
-		background-color: rgba(98, 170, 35, 1);
+		background-color: #0089ff;
 		border: 3px solid #fff;
 		box-shadow: 0px 1px 4px #fff inset;
 		margin-top: 5px;
 		margin-left: -25px;
-		height: 11%;
-		width: 45%;
-		right:28%;
-		bottom:	-100%;
+		height: 16%;
+		width: 66%;
+		right:17%;
+		bottom:	-131%;
 		font-size: 1vw;
 	}
 
 	.btn2 span {
 		color: #fff;
-		font-size: 5vw;
+		font-size: 7.5vw;
 	}
 
 	.btn-position img {
 		width: 15%;
-		margin-top: -4.5%;
+		margin-top: -6.5%;
+		margin-left: 12px;
 	}
 
 	.btn-position {
