@@ -1,22 +1,82 @@
 .main {
-	background-color: #E6E6E6;
+	background-color: #FFFFFF;
 }
 
 .main_top {
-	background-color: #6E6E6E;
+	background-color: #FFFFFF;
 }
 
-.owl-controls {
-	display: none;
+.top_pic {
+	width: 100%;
 }
 
-.background-position {
-	padding: 20px;
+.pc {
+	display: block
+	!important;
+}
+.sp {
+	display: none
+	!important; 
+}
+
+.relative {
+  	position: relative;
+}
+
+.oysterworld_icon-absolute {
+  	position: absolute;
+  	width: 25%;
+  	left:10%;
+  	bottom: 20%;
+  	z-index: 1;
+}
+
+.cover-absolute {
+  	position: absolute;
+  	width: 70%;
+  	right:0%;
+  	bottom: -0.7%;
+  	z-index: 2;
+}
+
+.title-absolute {
+  	position: absolute;
+  	right:5%;
+  	top: 0%;
+  	z-index: 3;
+}
+
+.subtitle-absolute1 {
+  	position: absolute;
+  	right: 13%;
+  	bottom: 48%;
+  	font-size: 2.5vw;
+  	text-align: center;
+  	z-index: 3;
+}
+
+.subtitle-absolute2 {
+  	position: absolute;
+  	right: 12.5%;
+  	bottom: 27%;
+  	font-size: 1.2vw;
+ 	z-index: 3;
+}
+
+.btn-absolute {
+  	position: absolute;
+  	z-index: 3;
 }
 
 .english {
 	font-family: 'Alex Brush', 'Segoe Script', sans-serif;
 	font-size: 25px;
+}
+
+.english-top {
+	font-family: 'Alex Brush', 'Segoe Script', sans-serif;
+	font-size: 7vw;
+	color:#FFFFFF;
 }
 
 .btn-position {
@@ -26,7 +86,9 @@
 }
 
 .btn-position img {
-	margin-top: -15px;
+	width:15%;
+	margin-top: -4.5%;
+	margin-left: 5px;
 }
 
 .btn1 a {
@@ -38,11 +100,15 @@
 }
 
 .btn1 {
-	background-color: rgba(242, 173, 46, 1);
+	background-color: #ff9600;
 	border: 3px solid #fff;
 	box-shadow: 0px 1px 4px #fff inset;
 	margin-left: -25px;
-	height: 45px;
+	height: 6%;
+	width: 15%;
+	right: 30%;
+	bottom: 20%;
+	font-size: 1vw;
 }
 
 .bt1 {
@@ -52,22 +118,26 @@
 }
 
 .btn1:hover {
-	background-color: rgba(0, 0, 0, 1);
-	transition: all 0.5s;
+	background-color: #ffe3bb;
+	transition: all 0.2s;
 }
 
 .btn1 span {
 	color: #fff;
-	font-size: 30px;
+	font-size: 1.7vw;
 }
 
 .btn2 {
-	background-color: rgba(98, 170, 35, 1);
+	background-color:#0089ff;
 	border: 3px solid #fff;
 	box-shadow: 0px 1px 4px #fff inset;
 	margin-top: 5px;
 	margin-left: -25px;
-	height: 45px;
+	height: 6%;
+	width: 15%;
+	right:12.5%;
+	bottom:20%;
+	font-size: 1vw;
 }
 
 .bt2 {
@@ -77,37 +147,124 @@
 }
 
 .btn2:hover {
-	background-color: rgba(0, 0, 0, 1);
-	transition: all 0.5s;
+	background-color: #b3d5f3;
+	transition: all 0.2s;
 }
 
 .btn2 span {
 	color: #fff;
-	font-size: 30px;
-}
-
-.btn4 {
-	margin-top: 5px;
-	height: 359px;
-	margin-left: -25px;
+	font-size: 1.7vw;
 }
 
 .item {
 	font-size: 15px;
 }
 
-.wel {
-	background-color: rgba(60, 178, 178, 1);
-	border: 3px solid #fff;
-	padding: 10px 7px;;
-}
+@media screen and (max-width:900px) {
+	.pc {
+		display: none !important;
+	}
 
-.welcome p {
-	color: #fff;
-	text-align: center;
-}
+	.sp {
+		display: block !important;
+		width: 100%;
+	}
+	
+	.sp-display {
+		background-color: #FFFFFF;
+		width: 100%;
+		aspect-ratio: 9 / 10;
+	}
 
-@media screen and (max-width:990px) {
+	.oysterworld_icon-absolute {
+		position: absolute;
+		width: 50%;
+		left: 23%;
+		bottom: 3%;
+		z-index: 1;
+	}
+	
+	.english-top {
+		font-family: 'Alex Brush', 'Segoe Script', sans-serif;
+		font-size: 9.5vw;
+		top: 12%;
+		color: #FFFFFF;
+	}
+    
+	.subtitle-absolute1 {
+		position: absolute;
+		right: 13%;
+		bottom: -57%;
+		font-size: 5.5vw;
+		text-align: center;
+		z-index: 3;
+	}
+
+	.subtitle-absolute2 {
+		position: absolute;
+		right: 10.5%;
+		bottom: -91%;
+		font-size: 3vw;
+		text-align: center;
+		z-index: 3;
+	}
+
+	.btn1 {
+		background-color: #ff9600;
+		border: 3px solid #fff;
+		box-shadow: 0px 1px 4px #fff inset;
+		margin-left: -25px;
+		height: 16%;
+		width: 66%;
+		right: 17%;
+		bottom: -109%;
+		font-size: 1vw;
+	}
+
+	.btn1 span {
+		color: #fff;
+		font-size: 7.5vw;
+	}
+
+	.btn2 {
+		background-color: #0089ff;
+		border: 3px solid #fff;
+		box-shadow: 0px 1px 4px #fff inset;
+		margin-top: 5px;
+		margin-left: -25px;
+		height: 16%;
+		width: 66%;
+		right:17%;
+		bottom:	-131%;
+		font-size: 1vw;
+	}
+
+	.btn2 span {
+		color: #fff;
+		font-size: 7.5vw;
+	}
+
+	.btn-position img {
+		width: 15%;
+		margin-top: -6.5%;
+		margin-left: 12px;
+	}
+
+	.btn-position {
+		display: block;
+		text-align: center;
+		margin-top: 0px;
+	}
+
+	.btn-absolute {
+		position: absolute;
+		z-index: 3;
+	}
+	
+	.cover-absolute {
+		display:none;
+	}
+    
 	.background-position {
 		padding: 0;
 	}
@@ -121,9 +278,5 @@
 	}
 	.btn2 {
 		margin-left: 0;
-	}
-	.btn4 {
-		margin-left: 0;
-		margin-bottom: 5px;
 	}
 }

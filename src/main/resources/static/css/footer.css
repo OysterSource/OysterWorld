@@ -1,5 +1,5 @@
 #gtco-footer {
-  background: #000;
+  background: #28b1f7;
   padding: 4em 0 0 0 !important;
   margin-bottom: 0 !important;
   width: 100%;
@@ -92,15 +92,9 @@
 }
 
 .gtco-staff, .gtco-item {
-  margin-bottom: 4em;
   float: left;
   width: 100%;
   display: block;
-}
-@media screen and (max-width: 768px) {
-  .gtco-staff, .gtco-item {
-    margin-bottom: 3em;
-  }
 }
 
 .gtco-staff img, .gtco-item img {
