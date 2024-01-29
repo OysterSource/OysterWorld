@@ -1,47 +1,205 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{layout}">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>牡蠣の世界？ | OYSTER WORLD</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+	<link rel="shortcut icon" href="../static/images/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="The world is your oyster!" />
+	<meta name="keywords" content="オイスターワールド,oysterworld,オイスター,ワールド,oyster,world" />
+	<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Great+Vibes" rel="stylesheet" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="オイスターワールド株式会社" />
+	<meta property="og:image" content="../static/images/top_logo.jpg" />
+	<meta property="og:url" content="https://oysterworld.jp/" />
+	<meta property="og:site_name" content="オイスターワールド株式会社" />
+	<meta property="og:description" content="The world is your oyster!" />
+	<meta name="twitter:title" content="オイスターワールド株式会社" />
+	<meta name="twitter:image" content="../static/images/top_logo.jpg" />
+	<meta name="twitter:url" content="https://oysterworld.jp/" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet" />
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../static/css/animate.css" />
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../static/css/icomoon.css" />
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="../static/css/themify-icons.css" />
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../static/css/bootstrap.css" />
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="../static/css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="../static/css/owl.theme.default.min.css" />
+
+
+	<!-- Theme style -->
+	<link rel="stylesheet" href="../static/css/style.css" />
+	<link rel="stylesheet" href="../static/css/layout.css" />
+	<link rel="stylesheet" href="../static/css/header.css" />
+	<link rel="stylesheet" href="../static/css/about.css" />
+	<link rel="stylesheet" href="../static/css/owl.carousel.css" />
+	<link rel="stylesheet" href="../static/css/footer.css" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128027383-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+		gtag("config", "UA-27782833-10");
+	</script>
+</head>
 
 <body>
 
+	<!-- header START -->
+	<header>
+		<div class="gtco-loader"></div>
+		<div id="page">
+			<nav class="gtco-nav" role="navigation">
+				<div class="hwrapper">
+					<div class="gtco-container header">
+						<div class="row">
+							<div class="col-xs-12 header-top"></div>
+							<div class="col-xs-12 menu">
+								<div>
+									<img src="../static/images/circle-2.png" alt="circle-2" class="circle2" />
+									<img src="../static/images/circle-1.png" alt="circle-1" class="circle1" />
+									<p>オイスターワールド株式会社</p>
+								</div>
+							</div>
+							<div class="col-xs-12 text-right menu-1">
+								<ul>
+									<li><a href="./index.html">ホーム</a></li>
+									<li><a href="./about.html">牡蠣の世界？</a></li>
+									<li><a href="./services.html">サービス</a></li>
+									<li><a href="./member.html">メンバー紹介</a></li>
+									<li><a href="./recruit.html">採用情報</a></li>
+									<li><a href="./company.html">会社概要</a></li>
+									<!-- <li><a href="contact.html">お問い合わせ</a></li> -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- header END -->
 
-<div layout:decorator="layout">
-  <th:block layout:fragment="layout-content">
+	<!-- layout START -->
+	<div class="gtco-section">
+		<div class="gtco-container main about-main">
+			<div class="row gtco-heading">
+				<div class="col-xs-12 text-left">
+					<h2>牡蠣の世界？</h2>
+					<p>英語の慣用句に「The world is one's oyster」というものがあります。
+						<br>世界は私の牡蠣？意味不明ですね。
+					</p>
+					<p>これは、
+						<br>★★ウィリアム・シェイクスピア　ウィンザーの陽気な女房たち(The Merry Wives of Windsor)★★
+						<br>に登場する句が由来です。
+					</p>
+					<p><span class="english color_11">"Why, then the world's mine oyster. Which I with sword will
+							open.</span>
+						<br>「（もしあなたが断るのであれば）私は世界を牡蠣（真珠貝）に見立て、刀でこじ開けよう。さすれば世界は私のものだ。」
+					</p>
+					<p>牡蠣には英語だと真珠貝という意味も含まれます。
+						<br>かたい殻で大切な真珠を守っているというイメージがあり、
+						<br>ロンドン市交通局の公共交通用ICカードである「Oyster Card」の命名由来となっています。
+					</p>
+					<p>響きが良いので社名にしましたが、
+						<br>当社は提供するシステムと技術でお客様の大切な真珠（情報資産）をかたい殻（強固なセキリュティ）で守る牡蠣ということです。
+					</p>
+					<p><span class="english color_11">The world is your (and our) oyster!</span>
+						<br>私たちと手を結ぶのであれば、世界は我々の思うがままですよ！
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- layout END -->
 
-		<div class="gtco-section">
-			<div class="gtco-container main about-main">
-				<div class="row gtco-heading">
-					<div class="col-xs-12 text-left">
-						<h2>牡蠣の世界？</h2>
-						<p>英語の慣用句に「The world is one's oyster」というものがあります。
-						 <br>世界は私の牡蠣？意味不明ですね。
-						</p>
-						<p>これは、
-						 <br>★★ウィリアム・シェイクスピア　ウィンザーの陽気な女房たち(The Merry Wives of Windsor)★★
-						 <br>に登場する句が由来です。
-						</p>
-						<p><span class="english color_11">"Why, then the world's mine oyster. Which I with sword will open.</span>
-						 <br>「（もしあなたが断るのであれば）私は世界を牡蠣（真珠貝）に見立て、刀でこじ開けよう。さすれば世界は私のものだ。」
-						</p>
-						<p>牡蠣には英語だと真珠貝という意味も含まれます。
-						 <br>かたい殻で大切な真珠を守っているというイメージがあり、
-						 <br>ロンドン市交通局の公共交通用ICカードである「Oyster Card」の命名由来となっています。
-						</p>
-						<p>響きが良いので社名にしましたが、
-						 <br>当社は提供するシステムと技術でお客様の大切な真珠（情報資産）をかたい殻（強固なセキリュティ）で守る牡蠣ということです。
-						</p>
-						<p><span class="english color_11">The world is you (and our) oyster!</span>
-						 <br>私たちと手を結ぶのであれば、世界は我々の思うがままですよ！
-						</p>
+	<!-- footer START -->
+	<footer id="gtco-footer" class="gtco-section" role="contentinfo">
+		<div class="gtco-container footer">
+			<div class="row row-pb-md">
+				<div class="row">
+					<div class="gtco-footer-link">
+						<div class="col-xs-12">
+							<div class="col-xs-12 col-sm-4 col-md-3 item">
+								<div class="gtco-staff">
+									<p>
+										<img src="../static/images\002.png" alt="" class="img-responsive" width="25％"
+											height="25%" />
+									</p>
+									<p>お電話 <br />03-6757-6255</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-3 item">
+								<div class="gtco-staff">
+									<p>
+										<img src="../static/images\003.png" alt="" class="img-responsive" width="50％"
+											height="50%" />
+									</p>
+									<p>
+										連絡先
+										<br />
+										<a class="mailito" href="mailto:info@oysterworld.jp">info@oysterworld.jp</a>
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-3 item">
+								<div class="gtco-staff copyright">
+									<p>
+										<img src="../static/images\004.png" alt="" class="img-responsive" width="30％"
+											height="30%" />
+									</p>
+									<p>
+										Copyright (C) <br />OYSTER WORLD&nbsp;INC. <br />All
+										Rights Reserved.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	<!-- main END  -->
+		<div class="gtco-copyright"></div>
 
-  </th:block>
-</div>
+		<!-- Modernizr JS -->
+		<script src="../static/js/modernizr-2.6.2.min.js"></script>
+		<!-- jQuery -->
+		<script src="../static/js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="../static/js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="../static/js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="../static/js/jquery.waypoints.min.js"></script>
+		<!-- Carousel -->
+		<script src="../static/js/owl.carousel.min.js"></script>
+		<!-- Main -->
+		<script src="../static/js/main.js"></script>
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+	</footer>
+	<!-- footer END -->
 
 </body>
+
 </html>
