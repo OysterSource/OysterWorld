@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap');
+/*--------------- mainVisual ---------------*/
+#mainVisual {
+  background-image: url(../images/message/main_visual.jpg);
+}
+/*--------------- messageSec ---------------*/
+#messageSec {
+  max-width: 1240px;
+  margin: auto;
+  padding: 6%;
+}
+#messageSec .photo {
+  position: relative;
+}
+#messageSec .photo img {
+  width: 100%;
+}
+#messageSec .photo p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #FFF;
+  font-weight: 500;
+  padding: 20% 6% 4%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  text-align: right;
+}
+#messageSec .photo p .name {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+#messageSec h2 {
+  text-align: center;
+  font-weight: 500;
+}
+@media screen and (min-width: 769px) {
+  #messageSec .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #messageSec .reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  #messageSec .photo {
+    width: 50%;
+  }
+  #messageSec .text {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 6% 1%;
+  }
+  #messageSec h2 {
+    font-size: 35px;
+    margin: 0 0 35px;
+  }
+  #messageSec p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+  #messageSec h2 {
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
+  #messageSec p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+  #messageSec h2 {
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
+  #messageSec p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #messageSec {
+    padding: 6% 6% 30px;
+  }
+  #messageSec .photo {
+    margin: 0 0 25px;
+  }
+  #messageSec .photo p {
+    padding: 20% 6% 5%;
+    font-size: 12px;
+  }
+  #messageSec h2 {
+    font-size: 26px;
+    margin: 0 0 20px;
+  }
+  #messageSec .text p {
+    margin: 0 0 25px;
+  }
+}
+/*--------------- oysterSec ---------------*/
+#oysterSec {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 6% 6%;
+  text-align: center;
+}
+#oysterSec h2 {
+  display: inline-block;
+  position: relative;
+  padding: 0.4em 0 0.5em 0.6em;
+  border-top: 3px solid #FAB446;
+  border-bottom: 3px solid #FAB446;
+  color: #FAB446;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+#oysterSec h2:before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) skew(-25deg);
+  height: 20px;
+  width: 10px;
+  border-right: 3px solid #FAB446;
+  background-color: white;
+}
+#oysterSec p .en {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-style: italic;
+}
+#oysterSec .inner {
+  background-image: url(../images/message/oyster_sec_bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  text-align: left;
+}
+@media screen and (min-width: 769px) {
+  #oysterSec .inner {
+    padding: 0 4% 0 6%;
+  }
+  #oysterSec h2 {
+    font-size: 50px;
+    margin: 0 0 50px;
+  }
+  #oysterSec p {
+    font-size: 18px;
+    margin: 0 0 30px;
+  }
+  #oysterSec p .en {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+  #oysterSec h2 {
+    font-size: 45px;
+    margin: 0 0 45px;
+  }
+  #oysterSec p {
+    font-size: 16px;
+    margin: 0 0 25px;
+  }
+  #oysterSec p .en {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+  #oysterSec h2 {
+    font-size: 35px;
+    margin: 0 0 35px;
+  }
+  #oysterSec p {
+    font-size: 12px;
+    margin: 0 0 20px;
+  }
+  #oysterSec p .en {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #oysterSec h2 {
+    font-size: 35px;
+    margin: 0 0 30px;
+  }
+  #oysterSec p {
+    margin: 0 0 20px;
+  }
+  #oysterSec p .en {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0 0 5px;
+  }
+}
