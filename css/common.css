@@ -1,0 +1,423 @@
+@charset "utf-8";
+@import "html5reset-1.6.1.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+body {
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  color: #333;
+  font-size: 16px;
+  height: 100%;
+  letter-spacing: 0.05em;
+  word-wrap: break-word;
+}
+html {
+  height: 100%;
+}
+a {
+  color: #333;
+}
+#wrapper {
+  position: relative;
+  min-height: 100%;
+}
+@media screen and (min-width: 769px) {
+  br.sp, img.sp {
+    display: none;
+  }
+  a, a:hover {
+    transition: 0.3s;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  html, body {
+    scroll-padding-top: 55px;
+  }
+  br.pc, img.pc {
+    display: none;
+  }
+}
+/*---------------------- header ------------------------*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #FFF;
+}
+@media screen and (min-width: 769px) {
+  header {
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.05);
+  }
+  header .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 980px;
+    height: 70px;
+    margin: 0px auto;
+    padding: 0 30px;
+  }
+  header .inner .logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .logo {
+    position: fixed;
+    background-color: #FFF;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding: 8px 0 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  }
+  header .logo img {
+    height: 44px;
+    width: auto;
+  }
+}
+/*---------------------- Global Navi Menu ------------------------*/
+#gNaviMenu li a {
+  font-family: "Teko", sans-serif;
+  display: block;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 769px) {
+  #gNaviMenu {
+    width: calc(100% - 230px);
+  }
+  #gNaviMenu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  #gNaviMenu li {
+    margin-left: 5%;
+  }
+  #gNaviMenu li:first-of-type {
+    margin-left: 0;
+  }
+  #gNaviMenu li a {
+    line-height: 67px;
+    padding-top: 3px;
+    transition: 0.3s;
+  }
+  #gNaviMenu li a:hover, #gNaviMenu li.active a {
+    color: #FAB446;
+  }
+  #gNaviMenu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #FAB446;
+    transition: all 0.3s;
+    transform: scale(0, 1);
+    transform-origin: left top;
+  }
+  #gNaviMenu li a:hover::after, #gNaviMenu li.active a::after {
+    transform: scale(1, 1);
+  }
+}
+@media screen and (max-width: 768px) {
+  #gNaviMenu.active {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 109;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  #gNaviMenuInner {
+    width: 250px;
+    height: 100%;
+    background-color: #FFF;
+    transition: all 0.3s ease-in-out 0.0s;
+    position: fixed;
+    z-index: 110;
+    top: 0;
+    left: -250px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    padding: 80px 20px 20px;
+    text-align: center;
+  }
+  #gNaviMenuInner.active {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    left: 0px;
+  }
+  #gNaviMenu ul li a {
+    border-top: 1px solid #999;
+    padding: 15px 0 12px;
+  }
+  #gNaviMenu ul li.active a {
+    color: #FAB446;
+  }
+  #gNaviMenu ul li:last-child a {
+    border-bottom: 1px solid #999;
+  }
+  #gNaviMenu li a::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+/*---------------------- Global Navi Button ------------------------*/
+#gNaviBtn {
+  display: block;
+  top: 5px;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  z-index: 112;
+  text-align: center;
+  position: fixed;
+  transition: all 0.3s ease-in-out 0.0s;
+}
+#gNaviBtn.active {
+  background-color: transparent;
+}
+#gNaviBtn span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  border-bottom: solid 2px #000;
+  -webkit-transition: .35s ease-in-out;
+  -moz-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+  left: 10px;
+  letter-spacing: normal;
+}
+#gNaviBtn span:nth-child(1) {
+  top: 14px;
+}
+#gNaviBtn span:nth-child(2) {
+  top: 24px;
+}
+#gNaviBtn span:nth-child(3) {
+  top: 34px;
+}
+#gNaviBtn.active span {
+  border-bottom: solid 2px #000;
+}
+/* 最初のspanをマイナス45度に */
+#gNaviBtn.active span:nth-child(1) {
+  top: 24px;
+  left: 10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* 2番目と3番目のspanを45度に */
+#gNaviBtn.active span:nth-child(2), #gNaviBtn.active span:nth-child(3) {
+  top: 24px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media screen and (min-width: 769px) {
+  #gNaviBtn {
+    display: none;
+  }
+}
+/*---------------------- contents ------------------------*/
+#contents p {
+  line-height: 1.8;
+}
+#contents .en {
+  font-family: "Teko", sans-serif;
+  letter-spacing: 0.02em;
+}
+@media screen and (min-width: 769px) {
+  #contents {
+    padding: 70px 0 280px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #contents {
+    padding: 60px 0 270px;
+  }
+}
+/*--------------- mainVisual ---------------*/
+#mainVisual {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#mainVisual h1 {
+  color: #FFF;
+  text-align: center;
+}
+#mainVisual h1 .en {
+  display: block;
+  font-size: 100px;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+}
+#mainVisual h1 .jp {
+  display: block;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+@media screen and (min-width: 769px) {
+  #mainVisual {
+    height: 500px;
+  }
+  #mainVisual h1 {
+    margin-left: -550px;
+  }
+}
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+  #mainVisual {
+    height: 400px;
+  }
+  #mainVisual h1 {
+    margin-left: -450px;
+  }
+  #mainVisual h1 .en {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+  #mainVisual {
+    height: 300px;
+  }
+  #mainVisual h1 {
+    margin-left: -400px;
+  }
+  #mainVisual h1 .en {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #mainVisual {
+    height: 150px;
+  }
+  #mainVisual h1 {
+    margin-left: -200px;
+  }
+  #mainVisual h1 .en {
+    font-size: 45px;
+    margin: 0;
+  }
+  #mainVisual h1 .jp {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 500px) {
+  #mainVisual {
+    height: 200px;
+  }
+}
+/*---------------------- footer ------------------------*/
+footer {
+  text-align: center;
+  background: #ebebec;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+footer .address {
+  margin: 0 0 20px;
+  line-height: 1.4;
+}
+footer li {
+  list-style-type: none;
+}
+footer .copy small {
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+@media screen and (min-width: 769px) {
+  footer {
+    height: 280px;
+    padding: 40px 0 0;
+  }
+  footer .logo {
+    margin: 0 0 30px;
+  }
+  footer .logo img {
+    width: 290px;
+    height: auto;
+  }
+  footer ul {
+    margin: 0 0 40px;
+  }
+  footer ul li {
+    display: inline-block;
+  }
+  footer ul li:first-of-type {
+    text-align: right;
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    height: 270px;
+    padding: 30px 0 0;
+  }
+  footer .logo {
+    margin: 0 0 20px;
+  }
+  footer .address {
+    margin: 0 0 15px;
+  }
+  footer ul {
+    margin: 0 0 30px;
+  }
+  footer li {
+    margin: 0 0 10px;
+  }
+  footer .copy small {
+    font-size: 10px;
+  }
+}

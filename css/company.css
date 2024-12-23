@@ -1,32 +1,73 @@
-.kaisha {
-width: 100%;
-margin-bottom:50px;
+@charset "utf-8";
+/*--------------- mainVisual ---------------*/
+#mainVisual {
+  background-image: url(../images/company/main_visual.jpg);
 }
-
-.kaisha th,
-.kaisha td {
-border: 1px solid #ccc;
-padding: 20px;
+#mainVisual h1 {
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1.0);
 }
-
-.kaisha th {
-font-weight: bold;
-background-color: #edf0f3;
-}
-
-.kaisha tr {
-background-color: #fff;
-}
-
-@media screen and (max-width: 640px) {
-  .last td:last-child {
-    border-bottom: solid 1px #ccc;
-    width: 100%;
+@media screen and (min-width: 769px) {
+  #mainVisual h1 {
+    margin-left: -520px;
   }
-  .kaisha th,
-  .kaisha td {
-　　border-bottom: none;
-    display: block;
-    width: 100%;
+}
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+  #mainVisual h1 {
+    margin-left: -350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #mainVisual h1 {
+    margin-left: -190px;
+  }
+}
+/*--------------- companyInfo ---------------*/
+#companyInfo {
+  padding: 4% 6% 6%;
+  max-width: 800px;
+  margin: auto;
+}
+#companyInfo dl {
+  line-height: 1.8;
+}
+#companyInfo dt {
+  font-weight: 700;
+}
+@media screen and (min-width: 769px) {
+  #companyInfo dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 1px solid #CCC;
+    padding: 25px 0;
+  }
+  #companyInfo dl:last-of-type {
+    border-bottom: 1px solid #CCC;
+  }
+  #companyInfo dt {
+    width: 220px;
+  }
+  #companyInfo dd {
+    width: calc(100% - 220px);
+  }
+  #companyInfo dd a:hover {
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #companyInfo {
+    padding: 6% 6% 10%;
+  }
+  #companyInfo dl {
+    border-top: 1px solid #CCC;
+  }
+  #companyInfo dl:last-of-type {
+    border-bottom: 1px solid #CCC;
+  }
+  #companyInfo dt {
+    padding: 15px 0 10px;
+  }
+  #companyInfo dd {
+    padding: 0 0 15px;
   }
 }
