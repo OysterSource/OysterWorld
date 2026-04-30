@@ -208,15 +208,15 @@
   }
   .contentsSecMain .text .textBoxMessage{
     font-size: 14px;
-    padding-top: 5px;    /* 上に20px */
-    padding-bottom: 5px; /* 下に20px */
+    padding-top: 5px;    /* 上に5px */
+    padding-bottom: 5px; /* 下に5px */
     line-height: 1.5;
     margin: 0 20px 5px;
   }
   .contentsSecMain .text .textBoxMessage dd{
     font-size: 14px;
-    padding-top: 5px;    /* 上に20px */
-    padding-bottom: 5px; /* 下に20px */
+    padding-top: 5px;    /* 上に5px */
+    padding-bottom: 5px; /* 下に5px */
     line-height: 1.5;
     margin: 0 0 5px;
   }
@@ -224,7 +224,6 @@
     font-size: 18px;
     margin: 0 100px 0px;
     line-height: 1.8;
-    /* padding: 0 0 5px; */
   }
 }
 @media screen and (max-width: 1399px) and (min-width: 1280px) {
@@ -264,8 +263,8 @@
     font-size: 20px;
     padding: 0 10px 10px;
     margin: 30px 30px;
-    padding-top: 10px;    /* 上に20px */
-    padding-bottom: 10px; /* 下に20px */
+    padding-top: 10px;    /* 上に10px */
+    padding-bottom: 10px; /* 下に10px */
     border-bottom: 3px solid #FAB446;
   }
   .contentsSecMain .text p {
@@ -287,15 +286,15 @@
   }
   .contentsSecMain .text .textBoxMessage{
     font-size: 14px;
-    padding-top: 5px;    /* 上に20px */
-    padding-bottom: 5px; /* 下に20px */
+    padding-top: 5px;    /* 上に5px */
+    padding-bottom: 5px; /* 下に5px */
     line-height: 1.5;
     margin: 0 20px 5px;
   }
   .contentsSecMain .text .textBoxMessage dd{
     font-size: 14px;
-    padding-top: 5px;    /* 上に20px */
-    padding-bottom: 5px; /* 下に20px */
+    padding-top: 5px;    /* 上に5px */
+    padding-bottom: 5px; /* 下に5px */
     line-height: 1.5;
     margin: 0 0 5px;
   }
@@ -303,7 +302,6 @@
     font-size: 18px;
     margin: 0 100px 0px;
     line-height: 1.8;
-    /* padding: 0 0 5px; */
   }
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
@@ -347,8 +345,8 @@
     font-size: 20px;
     padding: 0 0 10px;
     margin: 0px 40px 10px 40px;
-    padding-top: 10px;    /* 上に20px */
-    padding-bottom: 10px; /* 下に20px */
+    padding-top: 10px;    /* 上に10px */
+    padding-bottom: 10px; /* 下に10px */
     border-bottom: 3px solid #FAB446;
   }
   .contentsSecMain .text p {
@@ -371,14 +369,14 @@
   }
   .contentsSecMain .text .textBoxMessage{
     font-size: 14px;
-    padding-bottom: 5px; /* 下に20px */
+    padding-bottom: 5px; /* 下に5px */
     line-height: 1.5;
     margin: 0px 0px 20px;
   }
   .contentsSecMain .text .textBoxMessage dd{
     font-size: 14px;
-    padding-top: 5px;    /* 上に20px */
-    padding-bottom: 5px; /* 下に20px */
+    padding-top: 5px;    /* 上に5px */
+    padding-bottom: 5px; /* 下に5px */
     line-height: 1.5;
     margin: 0 0 5px;
   }
@@ -442,13 +440,12 @@
     border-top: 3px solid #FAB446;
     line-height: 1.8;
     padding: 0 0 5px;
-    /* font-family: "Yu Mincho"; */
   }
   .contentsSecMain .text h3 {
     font-size: 20px;
     padding: 0 20px 10px;
     font-weight: 500;
-    padding-bottom: 10px; /* 下に20px */
+    padding-bottom: 10px; /* 下に10px */
     border-bottom: 3px solid #FAB446;
   }
   .contentsSecMain .text dl {
@@ -466,7 +463,6 @@
   .contentsSecMain .text .textMainMessage {
     font-size: 16px;
     margin: 0 0 10px;
-    /* text-align: center; */
     line-height: 1.8;
     padding: 0 30px 5px 30px;
   }
@@ -539,7 +535,7 @@
     font-size: 16px;
     padding: 0 0 10px;
     
-    padding-bottom: 10px; /* 下に20px */
+    padding-bottom: 10px; /* 下に10px */
     border-bottom: 3px solid #FAB446;
   }
   .contentsSecMain .text p {
